@@ -8,7 +8,7 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "PizzazzZ - Sistema Completo para Pizzarias",
   description: "Aumente seus lucros em até 40% com o sistema completo de gestão e delivery para pizzarias. Controle pedidos, estoque e finanças em um só lugar.",
-  keywords: "sistema para pizzaria, delivery pizzaria, gestão pizzaria, controle de pedidos, sistema delivery",
+  keywords: "sistema para pizzaria, delivery para pizzaria, gestão de pizzaria, controle de pedidos, sistema de delivery",
   authors: [{ name: "PizzazzZ" }],
   icons: {
     icon: "/favicon.png",
@@ -55,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className="relative">
-      <body suppressHydrationWarning className={clsx(dmSans.className, "antialiased bg-[#feeaea]")}>
+      <body suppressHydrationWarning className={clsx(dmSans.className, "antialiased bg-[#feeaea] overflow-x-clip")}>
         {children}
       </body>
     </html>

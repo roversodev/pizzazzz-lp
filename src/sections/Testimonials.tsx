@@ -27,7 +27,7 @@ const testimonials = [
     username: "La Pizza Bella - RJ",
   },
   {
-    text: "A integração com ifood e o sistema de delivery próprio revolucionou nossa operação. Aumentamos os pedidos em 85%.",
+    text: "A integração com iFood e o sistema de delivery próprio revolucionaram nossa operação. Aumentamos os pedidos em 85%.",
     imageSrc: avatar3.src,
     name: "Carlos Oliveira",
     username: "Pizza Express - MG",
@@ -39,7 +39,7 @@ const testimonials = [
     username: "Pizzaria da Ana - RS",
   },
   {
-    text: "O suporte é incrível! Resolveram minhas dúvidas até nos finais de semana. O sistema nunca travou em horário de pico.",
+    text: "O suporte é incrível! Resolveram minhas dúvidas até nos fins de semana. O sistema nunca travou em horário de pico.",
     imageSrc: avatar5.src,
     name: "Pedro Mendes",
     username: "Pizza & Pizza - BA",

@@ -3,7 +3,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const text = 'Você está buscando gerenciar sua pizzaria de forma excepcional, mas os métodos tradicionais te deixam para trás com complexidade desnecessária.';
+const text = 'Você busca gerenciar sua pizzaria de forma excepcional, mas os métodos tradicionais o deixam para trás com complexidades desnecessárias.';
 const words = text.split(' ');
 
 const Indroduction = () => {
@@ -44,7 +44,7 @@ const Indroduction = () => {
                             </span>
                         ))}
                         </span>
-                        <span className='text-red-500 block'>É por isso que construímos o PizzazZ</span>
+                        <span className='text-red-500 block'>É por isso que construímos o PizzazzZ</span>
                     </div>
                 </div>
                 <div className="h-[150vh]" ref={textDiv}></div>

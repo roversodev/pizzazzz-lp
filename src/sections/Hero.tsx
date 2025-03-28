@@ -34,7 +34,7 @@ export const Hero = () => {
             className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#731d1b] text-transparent bg-clip-text mt-6">Aumente o lucro em 40%</motion.h1>
             <motion.p
             variants={variant.fadeInScale}
-            className="text-description-header">Com Pizzaz<span className="text-2xl text-[#3e0101] tracking-tight">z</span>Z você tem um sistema completo de gestão e delivery. Controle pedidos, estoque e finanças em um só lugar.</motion.p>
+            className="text-description-header">Com Pizzaz<span className="text-2xl text-[#3e0101] tracking-tight">z</span>Z, você tem um sistema completo de gestão e delivery. Controle pedidos, estoque e finanças em um só lugar.</motion.p>
             <motion.div
             variants={variant.fadeInScale}
             className="flex gap-1 items-center mt-[30px]">
