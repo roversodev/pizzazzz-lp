@@ -53,7 +53,7 @@ export const CallToAction = () => {
           <motion.a
           href="https://app.pizzazzz.com.br/login"
           variants={variant.fadeInUp}
-          className="btn btn-primary">Cadastre-se</motion.a>
+          className="btn btn-primary text-center">Começar Teste Grátis</motion.a>
           <motion.button
            variants={variant.fadeInUp}
           className="btn btn-text gap-1">

@@ -59,7 +59,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section className="py-24 bg-white overflow-x-clip">
+    <section id="pricing" className="py-24 bg-white overflow-x-clip">
       <div className="container">
         <div className="section-heading">
           <motion.h2

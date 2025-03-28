@@ -13,7 +13,7 @@ export const Header = () => {
   return (
     <header className='sticky top-0 backdrop-blur-sm z-20'>
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
-        <p className='text-white/60 hidden md:block'>Começe agora a usar pizzazzZ e melhore sua forma de pedir pizza,</p>
+        <p className='text-white/60 hidden md:block'>Começe agora a usar agora e melhore sua forma de gerir pizza,</p>
         <div className="inline-flex gap-1 items-center">
           <a href='https://app.pizzazzz.com.br/login'>Cadastre-se</a>
           <ArrowRight className='h-4 w-4 inline-flex justify-center items-center' />
@@ -40,6 +40,9 @@ export const Header = () => {
               <motion.a
               variants={variant.fadeInRight}
               href="#features">Funcionalidades</motion.a>
+              <motion.a
+              variants={variant.fadeInRight}
+              href="#pricing">Preços</motion.a>
               <motion.a
               variants={variant.fadeInRight}
               href="#clientes">Clientes</motion.a>

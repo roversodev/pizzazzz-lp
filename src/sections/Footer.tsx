@@ -29,6 +29,9 @@ export const Footer = () => {
               href="#features">Funcionalidades</motion.a>
               <motion.a
               variants={variant.fadeInUp}
+              href="#pricing">Preços</motion.a>
+              <motion.a
+              variants={variant.fadeInUp}
               href="#clientes">Clientes</motion.a>
               <motion.a
               variants={variant.fadeInUp}
