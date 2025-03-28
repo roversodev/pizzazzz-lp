@@ -3,7 +3,6 @@ import CheckIcon from "@/assets/check.svg";
 import { twMerge } from "tailwind-merge";
 import * as variant from '@/lib/motionVariants';
 import { motion } from "framer-motion";
-import { lookup } from "dns";
 
 const pricingTiers = [
   {
@@ -32,7 +31,7 @@ const pricingTiers = [
       "Cardápio digital",
       "Controle de estoque",
       "Relatórios financeiros",
-      "Integração com ifood",
+      "Controle de Motoboy's",
       "Suporte prioritário",
     ],
   },
@@ -60,7 +59,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white overflow-x-clip">
       <div className="container">
         <div className="section-heading">
           <motion.h2
@@ -111,14 +110,20 @@ export const Pricing = () => {
                 <span className="tracking-tight">/mês</span>
               </div>
               <button className={twMerge("btn btn-primary w-full mt-[30px]", inverse === true && 'bg-white text-black')}>{buttonText}</button>
-              <ul className="flex flex-col gap-5  mt-8">
+              <motion.ul
+              variants={variant.staggerContainer}
+              initial="start"
+              whileInView="end"
+              className="flex flex-col gap-5  mt-8">
                 {features.map((feature) => (
-                  <li key={feature} className="flex gap-4 text-sm items-center">
+                  <motion.li
+                  variants={variant.fadeInRight}
+                  key={feature} className="flex gap-4 text-sm items-center">
                     <CheckIcon className='h-6 w-6' />
                     {feature}
-                  </li>
+                  </motion.li>
                 ))}
-              </ul>
+              </motion.ul>
             </motion.div>
           ))}
 

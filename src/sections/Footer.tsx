@@ -22,23 +22,21 @@ export const Footer = () => {
         whileInView='end'
         className="flex flex-col md:flex-row md:justify-center gap-6 mt-6">
             <motion.a
-            variants={variant.fadeInUp}
-            href="#">Sobre</motion.a>
-            <motion.a
-            variants={variant.fadeInUp}
-            href="#">Funcionalidades</motion.a>
-            <motion.a
-            variants={variant.fadeInUp}
-            href="#">Clientes</motion.a>
-            <motion.a
-            variants={variant.fadeInUp}
-            href="#">Atualizações</motion.a>
-            <motion.a
-            variants={variant.fadeInUp}
-            href="#">Ajuda</motion.a>
-            <motion.a
-            variants={variant.fadeInUp}
-            href="#">Carreiras</motion.a>
+              variants={variant.fadeInUp}
+              href="#inicio">Início</motion.a>
+              <motion.a
+              variants={variant.fadeInUp}
+              href="#features">Funcionalidades</motion.a>
+              <motion.a
+              variants={variant.fadeInUp}
+              href="#clientes">Clientes</motion.a>
+              <motion.a
+              variants={variant.fadeInUp}
+              href="#contato">Teste Grátis</motion.a>
+              <motion.a
+              className='text-red-500'
+              variants={variant.fadeInUp}
+              href="https://app.pizzazzz.com.br/login">Cadastre-se</motion.a>
         </motion.nav>
         <div className="flex justify-center gap-6 mt-6">
         <SocialX />

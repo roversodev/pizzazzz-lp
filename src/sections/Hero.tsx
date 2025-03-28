@@ -38,7 +38,7 @@ export const Hero = () => {
             <motion.div
             variants={variant.fadeInScale}
             className="flex gap-1 items-center mt-[30px]">
-              <button className="btn">Teste Grátis</button>
+              <a href="https://app.pizzazzz.com.br/login" className="btn">Teste Grátis</a>
               <button className="btn btn-text gap-1">
                 <span>Ver Demonstração</span>
                 <ArrowIcon className='h-5 w-5' />

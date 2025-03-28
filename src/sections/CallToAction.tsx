@@ -50,9 +50,10 @@ export const CallToAction = () => {
         initial="start"
         whileInView='end'
         className="flex gap2 mt-10 justify-center">
-          <motion.button
+          <motion.a
+          href="https://app.pizzazzz.com.br/login"
           variants={variant.fadeInUp}
-          className="btn btn-primary">Começar Teste Grátis</motion.button>
+          className="btn btn-primary">Cadastre-se</motion.a>
           <motion.button
            variants={variant.fadeInUp}
           className="btn btn-text gap-1">

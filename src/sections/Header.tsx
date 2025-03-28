@@ -15,7 +15,7 @@ export const Header = () => {
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className='text-white/60 hidden md:block'>Começe agora a usar pizzazzZ e melhore sua forma de pedir pizza,</p>
         <div className="inline-flex gap-1 items-center">
-          <p>Cadastre-se</p>
+          <a href='https://app.pizzazzz.com.br/login'>Cadastre-se</a>
           <ArrowRight className='h-4 w-4 inline-flex justify-center items-center' />
         </div>
       </div>
@@ -46,9 +46,10 @@ export const Header = () => {
               <motion.a
               variants={variant.fadeInRight}
               href="#contato">Teste Grátis</motion.a>
-              <motion.button
+              <motion.a
+              href='https://app.pizzazzz.com.br/login'
               variants={variant.fadeInRight}
-              className='btn btn-primary'>Cadastre-se</motion.button>
+              className='btn btn-primary'>Cadastre-se</motion.a>
             </motion.nav>
 
             {/* Mobile Menu */}
