@@ -1,0 +1,56 @@
+'use client';
+import { useScroll, motion, useTransform } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { twMerge } from "tailwind-merge";
+
+const text = 'Você está buscando gerenciar sua pizzaria de forma excepcional, mas os métodos tradicionais te deixam para trás com complexidade desnecessária.';
+const words = text.split(' ');
+
+const Indroduction = () => {
+    const textDiv = useRef<HTMLDivElement>(null);
+    const { scrollYProgress } = useScroll({
+        target: textDiv,
+        offset: ["start end", "end end"], // Adjusted offset
+    });
+    
+    const [currentWord, setCurrentWord] = useState(0);
+    const wordIndex = useTransform(scrollYProgress, [0, 1], [0, words.length]);
+
+    useEffect(() => {
+        return wordIndex.on('change', (latest) => {
+            setCurrentWord(Math.floor(latest));
+        });
+    }, [wordIndex]);
+
+    return (
+        <section className='py-28 lg:py-40 bg-white'>
+            <div className="container">
+                <div className="sticky top-20 lg:top-44 md:top-36">
+                    <div className="flex justify-center">
+                        <div className="text-border">APRESENTANDO O PIZZAZZZ</div>
+                    </div>
+                    <div className="text-4xl md:text-5xl lg:text-6xl text-center font-semibold mt-10">
+                        <span>A gestão da sua pizzaria merece o melhor.</span>{" "}
+                        <span className="text-black/15">
+                        {words.map((word, index) => (
+                            <span 
+                                key={index}
+                                className={twMerge(
+                                    'transition duration-500',
+                                    index <= currentWord && 'text-black'
+                                )}
+                            >
+                                {word}{' '}
+                            </span>
+                        ))}
+                        </span>
+                        <span className='text-red-500 block'>É por isso que construímos o PizzazZ</span>
+                    </div>
+                </div>
+                <div className="h-[150vh]" ref={textDiv}></div>
+            </div>
+        </section>
+    )
+}
+
+export default Indroduction
