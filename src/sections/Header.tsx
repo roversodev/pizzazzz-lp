@@ -73,7 +73,7 @@ export const Header = () => {
                   <motion.nav
                   variants={variant.staggerContainer}
                   initial="start"
-                  whileInView="end"
+                  animate="end"
                   className="flex flex-col gap-6 text-xl">
                     <motion.a
                     variants={variant.fadeInRight}
