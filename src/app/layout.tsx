@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     images: [{
-      url: "/devilery-pizza.png",
+      url: "https://www.pizzazzz.com.br/devilery-pizza.png",
       width: 1200,
       height: 630,
       alt: "PizzazzZ - Sistema Completo para Pizzarias"
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "PizzazzZ - Sistema Completo para Pizzarias",
     description: "Aumente seus lucros em até 40% com o sistema completo de gestão e delivery para pizzarias.",
     images: [{
-      url: "/devilery-pizza.png",
+      url: "https://www.pizzazzz.com.br/devilery-pizza.png",
       width: 1200,
       height: 630,
       alt: "PizzazzZ - Sistema Completo para Pizzarias"
