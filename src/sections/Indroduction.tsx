@@ -1,5 +1,5 @@
 'use client';
-import { useScroll, motion, useTransform } from "framer-motion";
+import { useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -10,7 +10,7 @@ const Indroduction = () => {
     const textDiv = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: textDiv,
-        offset: ["start end", "end end"], // Adjusted offset
+        offset: ["start end", "end end"],
     });
     
     const [currentWord, setCurrentWord] = useState(0);
