@@ -7,21 +7,21 @@ import { motion } from "framer-motion";
 const pricingTiers = [
   {
     title: "Básico",
-    monthlyPrice: 97,
+    monthlyPrice: 299,
     buttonText: "Começar Agora",
     popular: false,
     inverse: false,
     features: [
-      "Até 300 pedidos/mês",
+      "Até 500 pedidos/mês",
       "Sistema de delivery",
       "Cardápio digital",
       "Controle de pedidos",
-      "Suporte por email",
+      "Controle de estoque",
     ],
   },
   {
     title: "Profissional",
-    monthlyPrice: 197,
+    monthlyPrice: 499,
     buttonText: "Teste Grátis 14 dias",
     popular: true,
     inverse: true,
@@ -37,14 +37,14 @@ const pricingTiers = [
   },
   {
     title: "Empresarial",
-    monthlyPrice: 397,
+    monthlyPrice: 699,
     buttonText: "Falar com Consultor",
     popular: false,
     inverse: false,
     features: [
       "Tudo do Profissional",
-      "Multi-unidades",
-      "Gestão de funcionários",
+      "Consultoria personalizada",
+      "Contabilidade integrada",
       "Análise avançada",
       "Consultoria mensal",
       "API personalizada",
