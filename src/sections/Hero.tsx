@@ -25,16 +25,18 @@ export const Hero = () => {
           variants={variant.staggerContainer}
           initial="start"
           whileInView="end"
-          className="md:w-[478px]">
+          className="md:w-[478px] sm:flex sm:items-center sm:flex-col md:items-start">
             <motion.div
             variants={variant.fadeInScale}
             className="text-border">Promoção de Lançamento</motion.div>
             <motion.h1
             variants={variant.fadeInScale}
-            className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#731d1b] text-transparent bg-clip-text mt-6">Aumente o lucro em 40%</motion.h1>
+            className="text-5xl md:text-7xl sm:text-center md:text-start font-bold tracking-tighter bg-gradient-to-b from-black to-[#731d1b] text-transparent bg-clip-text mt-6">
+              Aumente o lucro em 40%
+            </motion.h1>
             <motion.p
             variants={variant.fadeInScale}
-            className="text-description-header">Com Pizzaz<span className="text-2xl text-[#3e0101] tracking-tight">z</span>Z, você tem um sistema completo de gestão e delivery. Controle pedidos, estoque e finanças em um só lugar.</motion.p>
+            className="text-description-header sm:text-center md:text-start">Com Pizzaz<span className="text-2xl text-[#3e0101] tracking-tight">z</span>Z, você tem um sistema completo de gestão e delivery. Controle pedidos, estoque e finanças em um só lugar.</motion.p>
             <motion.div
             variants={variant.fadeInScale}
             className="flex gap-1 items-center mt-[30px]">
