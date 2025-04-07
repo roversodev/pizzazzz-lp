@@ -29,22 +29,22 @@ const Indroduction = () => {
                     <div className="flex justify-center">
                         <div className="text-border">APRESENTANDO O PIZZAZZZ</div>
                     </div>
-                    <div className="text-4xl md:text-5xl lg:text-6xl text-center font-semibold mt-10">
-                        <span>A gestão da sua pizzaria merece o melhor.</span>{" "}
+                    <div className="text-4xl md:text-5xl lg:text-6xl text-center font-semibold mt-10 tracking-tighter">
+                        <span className="bg-gradient-to-b from-black to-[#731d1b] text-transparent bg-clip-text">A gestão da sua pizzaria merece o melhor.</span>{" "}
                         <span className="text-black/15">
                         {words.map((word, index) => (
                             <span 
                                 key={index}
                                 className={twMerge(
                                     'transition duration-500',
-                                    index <= currentWord && 'text-black'
+                                    index <= currentWord && 'bg-gradient-to-b from-black to-[#731d1b] text-transparent bg-clip-text'
                                 )}
                             >
                                 {word}{' '}
                             </span>
                         ))}
                         </span>
-                        <span className='text-red-500 block'>É por isso que construímos o PizzazzZ</span>
+                        <span className='text-red-600 block'>É por isso que construímos o PizzazzZ</span>
                     </div>
                 </div>
                 <div className="h-[150vh]" ref={textDiv}></div>
