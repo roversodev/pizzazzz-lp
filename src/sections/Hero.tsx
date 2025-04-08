@@ -29,7 +29,7 @@ export const Hero = () => {
           className="md:w-[478px] sm:flex sm:items-center sm:flex-col md:items-start">
             <motion.div
             variants={variant.fadeInScale}
-            className="text-border">Promoção de Lançamento</motion.div>
+            className="text-border2">Promoção de Lançamento</motion.div>
             <motion.h1
             variants={variant.fadeInScale}
             className="text-5xl md:text-7xl sm:text-center md:text-start font-bold tracking-tighter bg-gradient-to-b from-black to-[#731d1b] text-transparent bg-clip-text mt-6">
@@ -110,7 +110,6 @@ export const Hero = () => {
               <iframe 
                 src="https://www.loom.com/embed/e40dd81f518e4c05b8beb3a19965815f?sid=1459bf88-7e1c-45ad-9349-dc8af3c52cb5" 
                 className="absolute top-0 left-0 w-full h-full"
-                frameBorder="0" 
                 allowFullScreen
               />
             </div>

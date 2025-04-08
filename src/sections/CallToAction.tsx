@@ -6,6 +6,7 @@ import ArrowRightIcon from '@/assets/arrow-right.svg'
 import starImage from '@/assets/star2.png'
 import springImage from '@/assets/spring2.png'
 import { useState } from 'react';
+import { RainbowButton } from '@/components/magicui/rainbow-button';
 
 export const CallToAction = () => {
   const [showVideo, setShowVideo] = useState(false);
@@ -35,7 +36,7 @@ export const CallToAction = () => {
           transition={{
             duration: 1,
           }}
-          className="section-description mt-5">Junte-se a mais de 200 pizzarias que já aumentaram seus lucros com o sistema completo do PizzazzZ. Teste grátis por 14 dias.</motion.p>
+          className="section-description mt-5">Junte-se a comunidade de pizzarias que já aumentaram seus lucros com o sistema completo do PizzazzZ. Teste grátis por 90 dias com o cupom PZZZ100.</motion.p>
           <motion.img
           style={{
             translateY: translateY,
@@ -52,10 +53,12 @@ export const CallToAction = () => {
         initial="start"
         whileInView='end'
         className="flex gap2 mt-10 justify-center">
-          <motion.a
-          href="https://app.pizzazzz.com.br/login"
-          variants={variant.fadeInUp}
-          className="btn btn-primary text-center">Começar Teste Grátis</motion.a>
+          <RainbowButton 
+            className="btn btn-primary text-center" 
+            onClick={() => window.open('https://app.pizzazzz.com.br/login', '_blank')}
+          >
+            Começar Teste Grátis
+          </RainbowButton>
           <motion.button
             onClick={() => setShowVideo(true)}
             variants={variant.fadeInUp}

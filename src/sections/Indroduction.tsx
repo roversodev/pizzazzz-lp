@@ -27,7 +27,7 @@ const Indroduction = () => {
             <div className="container">
                 <div className="sticky top-20 lg:top-44 md:top-36">
                     <div className="flex justify-center">
-                        <div className="text-border">APRESENTANDO O PIZZAZZZ</div>
+                        <div className="text-border2">APRESENTANDO O PIZZAZZZ</div>
                     </div>
                     <div className="text-4xl md:text-5xl lg:text-6xl text-center font-semibold mt-10 tracking-tighter">
                         <span className="bg-gradient-to-b from-black to-[#731d1b] text-transparent bg-clip-text">A gestão da sua pizzaria merece o melhor.</span>{" "}

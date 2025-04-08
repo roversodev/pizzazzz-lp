@@ -22,7 +22,7 @@ const pricingTiers = [
   {
     title: "Profissional",
     monthlyPrice: 499,
-    buttonText: "Teste Grátis 14 dias",
+    buttonText: "Teste Grátis 90 dias",
     popular: true,
     inverse: true,
     features: [
@@ -71,7 +71,7 @@ export const Pricing = () => {
           variants={variant.fadeInRight}
           initial="start"
           whileInView='end'
-          className="section-description mt-5">Escolha o plano ideal para sua pizzaria. Comece hoje mesmo com 14 dias grátis.</motion.p>
+          className="section-description mt-5">Escolha o plano ideal para sua pizzaria. Comece hoje mesmo com 90 dias grátis com cupom exclusivo.</motion.p>
         </div>
 
         <div
@@ -109,7 +109,7 @@ export const Pricing = () => {
                 <span className="text-4xl font-bold tracking-tighter leading-none">{monthlyPrice}</span>
                 <span className="tracking-tight">/mês</span>
               </div>
-              <button className={twMerge("btn btn-primary w-full mt-[30px]", inverse === true && 'bg-white text-black')}>{buttonText}</button>
+              <a href="#contato" className={twMerge("btn btn-primary w-full mt-[30px]", inverse === true && 'bg-white text-black')}>{buttonText}</a>
               <motion.ul
               variants={variant.staggerContainer}
               initial="start"

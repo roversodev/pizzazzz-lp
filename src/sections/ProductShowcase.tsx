@@ -5,6 +5,8 @@ import tubeImage from "@/assets/tube2.png";
 import {motion, useScroll, useSpring, useTransform} from "framer-motion";
 import {useRef} from "react";
 import * as variant from '@/lib/motionVariants';
+import { BorderBeam } from "@/components/magicui/border-beam";
+import Image from "next/image";
 
 export const ProductShowcase = () => {
 
@@ -43,7 +45,7 @@ export const ProductShowcase = () => {
           <motion.div
           variants={variant.fadeInScale}
           className="flex justify-center">
-            <div className="text-border">Sistema completo para pizzarias</div>
+            <div className="text-border2">Sistema completo para pizzarias</div>
           </motion.div>
           <div className="section-heading">
           <motion.h2
@@ -58,9 +60,10 @@ export const ProductShowcase = () => {
         </motion.div>
         <div
         className="relative">
-          <motion.img src={productImage.src} alt="Product Image" className="mt-10 rounded-2xl" ref={productBannerRef} style={{
-          scale: scale,
-        }}/>
+          <div className="relative overflow-hidden mt-10 rounded-2xl">
+            <BorderBeam/>
+          <Image src={productImage} alt="Product Image" className="" ref={productBannerRef} />
+          </div>
           <motion.img
           style={{
             translateY,

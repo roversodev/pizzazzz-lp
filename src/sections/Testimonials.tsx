@@ -115,7 +115,7 @@ export const Testimonials = () => {
     <section id='clientes' className="bg-white">
       <div className="container">
         <div className="flex justify-center">
-          <div className="text-border">Depoimentos</div>
+          <div className="text-border2">Depoimentos</div>
         </div>
         <div className="section-heading">
           <motion.h2

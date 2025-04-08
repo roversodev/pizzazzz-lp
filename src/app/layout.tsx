@@ -64,7 +64,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body suppressHydrationWarning className={clsx(dmSans.className, "antialiased bg-[#feeaea] overflow-x-hidden")}>
+      <body suppressHydrationWarning className={clsx(dmSans.className, "antialiased bg-[#feeaea] dark:bg-black overflow-x-hidden")}>
         {children}
       </body>
     </html>
