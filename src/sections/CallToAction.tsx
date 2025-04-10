@@ -54,10 +54,10 @@ export const CallToAction = () => {
         whileInView='end'
         className="flex gap2 mt-10 justify-center">
           <RainbowButton 
-            className="btn btn-primary text-center" 
+            className="px-4 py-2 text-center gap-1"
             onClick={() => window.open('https://app.pizzazzz.com.br/login', '_blank')}
           >
-            Começar Teste Grátis
+            Começar<span className='hidden md:block'> Agora</span>
           </RainbowButton>
           <motion.button
             onClick={() => setShowVideo(true)}
