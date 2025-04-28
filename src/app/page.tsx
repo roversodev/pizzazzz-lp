@@ -16,7 +16,7 @@ export default function Home() {
     <ReactLenis root>
       <Header />
       <Hero />
-      <LogoTicker />
+      {/* <LogoTicker /> */}
       <Indroduction />
       <ProductShowcase />
       <Grid />
